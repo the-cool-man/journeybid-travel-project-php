@@ -1,0 +1,83 @@
+<?php include('config.php'); ?>
+<?php
+	function signup($val){
+		$ins = "insert into user values('$id','$val[email]','$val[password]','$val[type]')";
+		$query = mysql_query($ins);
+		$ins1 = "insert into usermeta values('" . mysql_insert_id() . "','user-detail','".json_encode( $val )."','$id')";
+		$query = mysql_query($ins1);
+		if($query){
+			$msg = "Your Value Submitted ";
+		}
+	}
+	function transport($val){
+		$ins = "insert into user values('$id','$val[email]','$val[password]','$val[type]')";
+		$query = mysql_query($ins);
+		$ins1 = "insert into usermeta values('" . mysql_insert_id() . "','user-detail','".json_encode( $val )."','$id')";
+		$query = mysql_query($ins1);
+		if($query){
+			$msg = "Your Value Submitted ";
+		}
+	}
+	function login($val){
+		$ins = "select * from user where email = '$val[email]' and password = '$val[password]'";
+		$query = mysql_query($ins);
+		if(mysql_num_rows($query) == 1){
+			$value = mysql_fetch_array($query);
+			$_SESSION['values'] = $value;
+			header('location:profile.php');
+		}else{
+			$msg = 'PLease fill email/password correct';
+		}
+	}
+	function logout(){
+		session_destroy();
+		unset($_SESSION);
+		header('location:index.html');
+	}
+	function adminlogin($val){
+		$ins = "select * from user where email = '$val[email]' and password = '$val[password]' and type = 'admin'";
+		$query = mysql_query($ins);
+		if(mysql_num_rows($query) == 1){
+			$value = mysql_fetch_array($query);
+			$_SESSION['value'] = $value;
+			header('location:home.php');
+		}else{
+			$msg = 'PLease fill email/password correct';
+		}
+	}
+	function user(){
+		$sel = "select * from user join usermeta on (user.id = usermeta.user_id) where user.type='traveller' or user.type='transport'";
+		$query = mysql_query($sel);
+	?>
+	<table class="table table-striped table-bordered bootstrap-datatable datatable">
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Date registered</th>
+				<th>Role</th>
+				<th>Status</th>
+				<th>Actions</th>
+			</tr>
+		</thead> 
+		<tbody>
+	<?php while($d = mysql_fetch_array($query)){ ?>
+			<tr>
+				<?php $value = json_decode($d['meta_value']); ?>
+				<td><?php echo $value->username; ?></td>
+				<td><?php echo $value->email; ?></td>
+				<td><?php echo $value->mobile; ?></td>
+				<td><?php echo $value->type; ?></td>
+				
+				<td class="center">
+					<a class="btn btn-danger" href="#"><i class="halflings-icon white trash"></i> </a>
+				</td>
+			</tr>
+<?php	//print_r($d);
+		} 
+	?>
+		
+		</tbody>
+	</table> 
+	<?php
+	}
+?>

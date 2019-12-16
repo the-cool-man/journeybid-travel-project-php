@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Your Easiest Bus, Limo and Private Hire Taxi Bookings</title>
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/library/font-awesome.min.css">
+<link rel="stylesheet" href="css/library/bootstrap.min.css">
+<link rel="stylesheet" href="css/library/jquery-ui.min.css">
+<link rel="stylesheet" href="css/library/owl.carousel.css">
+<link rel="stylesheet" href="css/library/jquery.mb.YTPlayer.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Search</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline">
+          <select class="form-control">
+            <option>Please Select</option>
+            <option>Journeys</option>
+            <option>Providers</option>
+          </select>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Search">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Go</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="wrap">
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo float-left"><a href="index.html" title=""><img src="images/logo-header.png" alt=""></a></div>
+      <div class="bars" id="bars"></div>
+      <nav class="navigation nav-c" id="navigation" data-menu-type="1200">
+        <div class="nav-inner"><a href="#" class="bars-close" id="bars-close">Close</a>
+          <div class="tb">
+            <div class="tb-cell">
+              <ul class="menu-list text-uppercase">
+                <li class="current-menu-parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tachometer"></i> Dashboard</a>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="">Dashboard</a></li>
+                    <li><a href="#" title="">Settings</a></li>
+                    <li><a href="#" title="">Change Password</a></li>
+                    <li><a href="#" title="">Deposit</a></li>
+                    <li><a href="#" title="">Transfer to Escrow</a></li>
+                    <li><a href="#" title="">Withdraw Fund</a></li>
+                    <li><a href="#" title="">Money Transfer Account</a></li>
+                    <li><a href="#" title="">My Transaction</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-bullhorn"></i> Place your journey</a></li>
+                <li><a href="how-it-works.html" title=""><i class="fa fa-question-circle"></i> How it works</a></li>
+                <li><a href="#" title="notification"><i class="fa fa-globe"></i> </a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="messages"> <i class="fa fa-envelope"></i> </a> </li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i> </a>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="">Travellor Cp</a></li>
+                    <li><a href="#" title="">Log Out</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> <i class="fa fa-search"></i> </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="sub-banner">
+    <div class="bg-parallax bg-1"></div>
+    <div class="logo-banner text-center"><a href="index.html" title=""><img src="images/logo-banner.png" alt=""></a></div>
+  </section>
+  <div class="main">
+    <div class="container">
+      <div class="main-cn element-page bg-white clearfix">
+        <section class="breakcrumb-sc">
+          <ul class="breadcrumb arrow">
+            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+            <li>Chat</li>
+          </ul>
+        </section>
+        <br>
+        <div class="row">
+          <div class="col-md-12"> <br>
+            <section class="user-profile">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title"> Chat </h3>
+                </div>
+                <div class="panel-body">
+                  <div class="message-wrap col-md-12">
+                    <div class="msg-wrap">
+                      <div class="media msg"> <a class="pull-left" href="#"> <img src="images/avatar.jpg" style="width: 40px; height: 40px;"> </a>
+                        <div class="media-body"> <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+                          <h5 class="media-heading">Hubert Grealish</h5>
+                          <small class="col-lg-10">Hi, How are you doing Sohail?"</small> </div>
+                      </div>
+                      <div class="media msg"> <a class="pull-left" href="#"> <img src="images/avatar.jpg" style="width: 40px; height: 40px;"> </a>
+                        <div class="media-body"> <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+                          <h5 class="media-heading">Sohail Akhtar</h5>
+                          <small class="col-lg-10">I am doing well, how are you?</small> </div>
+                      </div>
+                    </div>
+                    <div class="send-wrap ">
+                      <textarea class="form-control send-message" rows="3" placeholder="Write a reply..."></textarea>
+                    </div>
+                    <div class="btn-panel"> <a href="" class=" col-lg-4 text-right btn btn-primary   send-message-btn pull-right" role="button"><i class="fa fa-plus"></i> Send Message</a> </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo-foter"><a href="index-2.html" title=""><img src="images/logo-footer.png" alt=""></a></div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="ul-ft">
+            <ul>
+              <li><a href="about.html" title="">About</a></li>
+              <li><a href="blog.html" title="">Blog</a></li>
+              <li><a href="faq.html" title="">FAQ</a></li>
+              <li><a href="how-it-works.html" title="">How it Works</a></li>
+              <li><a href="careers.html" title="">Providers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="ul-ft">
+            <ul>
+              <li><a href="contact.html" title="">Contact Us</a></li>
+              <li><a href="#" title="">Privacy Policy</a></li>
+              <li><a href="#" title="">Term of Service</a></li>
+              <li><a href="#" title="">Live Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <p class="copyright">© 2015 JourneyBid™ All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="js/library/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/library/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/library/parallax.min.js"></script>
+<script type="text/javascript" src="js/library/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/library/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/library/jquery.mb.YTPlayer.min.js"></script>
+<script type="text/javascript" src="js/library/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

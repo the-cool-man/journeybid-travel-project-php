@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Your Easiest Bus, Limo and Private Hire Taxi Bookings</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<!--<link href="http://fonts.googleapis.com/css?family=Lato:300,400%7COpen+Sans:300,400,600" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="iconfonts/flaticon.css">
+<link rel="stylesheet" href="css/library/font-awesome.min.css">
+<link rel="stylesheet" href="css/library/bootstrap.min.css">
+<link rel="stylesheet" href="css/library/jquery-ui.min.css">
+<link rel="stylesheet" href="css/library/owl.carousel.css">
+<link rel="stylesheet" href="css/library/jquery.mb.YTPlayer.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hover.css">
+</head>
+<body>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Search</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline">
+          <select class="form-control">
+            <option>Please Select</option>
+            <option>Journeys</option>
+            <option>Providers</option>
+          </select>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Search">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Go</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div id="wrap">
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo float-left"><a href="index.html" title=""><img src="images/logo-header1.png" alt="" class="img-responsive"></a></div>
+      <div class="bars" id="bars"></div>
+      <nav class="navigation nav-c" id="navigation" data-menu-type="1200">
+        <div class="nav-inner"><a href="#" class="bars-close" id="bars-close">Close</a>
+          <div class="tb">
+            <div class="tb-cell">
+              <ul class="menu-list text-uppercase">
+                <li class="current-menu-parent"><a href="index.html" title=""><i class="fa fa-bullhorn"></i> Place your journey</a></li>
+                <li><a href="#" style="color:#233a7c;"><i class="fa fa-gavel"></i> Bid for Journey</a></li>
+                <li><a href="how-it-works.html" title="" style="color:#233a7c;"><i class="fa fa-file-text"></i> How it works</a></li>
+                <li><a href="user-registration.html" title="" style="color:#233a7c;"><i class="fa fa-user"></i> Register</a></li>
+                <li><a href="user-login.html" title="" style="color:#233a7c;"><i class="fa fa-sign-in"></i> Login</a></li>
+                <li>
+                <a href="#" title="" style="color:#233a7c;" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> Bids</a>
+                
+<!--                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="height:61px;"> <i class="fa fa-search"></i> </button>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <div class="slide-1">
+          <div class="container">
+            <div class="col-md-9">
+              <h2 style="color:#fff; font-style:italic;text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);"> Corporate & Club Travel<br>
+                Weddings & Events</h2>
+            </div>
+            <div class="col-md-3">
+              <h3 style="color:#fff; font-size:30px; font-weight:300;font-family: 'Open Sans', sans-serif; padding-top:20px; text-align:right;">Bring down the price<br>
+                Broaden the choice </h3>
+            </div>
+          </div>
+          <!--<div class="container">
+            <div class="col-md-12">
+              <h4 style="color:#fff;text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);"> Post your trip needs for immediate quotes today! <br>
+                Completely free. </h4>
+            </div>
+          </div>-->
+        </div>
+        <div class="hero">
+          <hgroup> </hgroup>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  
+
+  
+    <div class="banner-cn">
+      <div class="form-cn form-car">
+        <h2 style="color:#233a7c; font-weight:300;"> Where are you planning to go ? </h2>
+        <div class="form-search clearfix">
+          <div class="form-field field-picking">
+            <input type="text" id="picking" class="field-input" name="from" placeholder="Start Location" style="color:#f86523;font-weight:400;" required>
+          </div>
+          <div class="form-field field-droping">
+            <input type="text" class="field-input" placeholder="End Location" style="color:#f86523;font-weight:400;" name="to" required>
+          </div>
+          <div class="form-field field-date">
+            <input type="text" class="field-input calendar-input" placeholder="Date" style="color:#f36b38;font-weight:400;" name="date" required>
+          </div>
+
+          <input type="hidden" name="index-tracker" value="indexpage"/>
+          <div class="form-submit">
+            <button type="submit" name="indexsubmit" class="awe-btn awe-btn-lager awe-search" style="padding:0px;width:206px;">Post / Sign in</button>
+          </div>
+        </div>
+        <h4 style="color:#747474;"> Post your trip needs for immediate quotes today! Completely free. </h4>
+      </div>
+    </div>
+    
+
+    
+    <div class="container">
+      <div class="col-md-12" style="margin-left:40px;">
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+          <!-- Bottom Carousel Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#quote-carousel" data-slide-to="1"></li>
+            <li data-target="#quote-carousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel Slides / Quotes -->
+          <div class="carousel-inner">
+            <!-- Quote 1 -->
+            <div class="item active">
+              <!-- <blockquote>-->
+              <div class="row">
+                <div class="col-sm-2"> <img class="img-circle" src="images/testimonial-1.png" style="width: 100px;height:100px; border:4px solid #fff;"> </div>
+                <div class="col-sm-7" style="margin-left:-60px;">
+                  <p style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);">
+                  "Corporates need to see value and it can take a while. Now it's just one post."
+                  </p>
+                  <small style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);">Professional Seervices Manager, Galway</small> </div>
+              </div>
+              <!--   </blockquote>-->
+            </div>
+            <!-- Quote 2 -->
+            <div class="item">
+              <!--  <blockquote>-->
+              <div class="row">
+                <div class="col-sm-2"> <img class="img-circle" src="images/testimonial-2.png" style="width: 100px;height:100px; border:4px solid #fff;"> </div>
+                <div class="col-sm-7" style="margin-left:-60px;">
+                  <p style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);">
+                  
+                  
+                  "JourneyBid broadens our reach, maximizing our fleet, with no marketing effort and, no ads."
+                </p>
+                  <small style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);"> Bus Company , Co. Meath</small> </div>
+              </div>
+              <!--   </blockquote>-->
+            </div>
+            <!-- Quote 3 -->
+            <div class="item">
+              <!--<blockquote style="color:#fff;">-->
+              <div class="row">
+                <div class="col-sm-2"> <img class="img-circle" src="images/testimonial-3.png" style="width: 100px;height:100px; border:4px solid #fff;"> </div>
+                <div class="col-sm-7" style="margin-left:-60px;">
+                  <p style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);">"Easiest coach trip ever! We could pick and choose with more options than before."</p>
+                  <small style="color:#fff;text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);"> Global Tech Firm, Dublin.</small> </div>
+              </div>
+              <!--  </blockquote>-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <section class="confidence-subscribe">
+    <div class="container">
+      <div class="row cs-sb-cn">
+        <div class="col-md-12">
+          <div class="confidence">
+            <h2 class="text-center" style="color:#233a7c; font-weight:300;">How it Works</h2>
+            <div class="col-md-4 text-center"> <img src="images/jbi1.png">
+              <h4 style="color:#747474;">Post your trip needs</h4>
+            </div>
+            <div class="col-md-4 text-center"><img src="images/jbi2.png" >
+              <h4 style="color:#747474;">Travel companies make their bid</h4>
+            </div>
+            <div class="col-md-4 text-center"> <img src="images/jbi3.png">
+              <h4 style="color:#747474;"> Select and go with the best</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--add this -->
+  <section class="confidence-subscribe">
+    <div class="container">
+      <div class="row cs-sb-cn">
+        <div class="col-md-12">
+          <div class="confidence">
+            <h2 class="text-center" style="color:#233a7c; font-weight:300; padding-bottom:10px;">Corporate Events to VIP</h2>
+            <h4 class="text-center" style="color:#747474; padding-bottom:15px;"> Best deals for your event or party, guaranteed. Be creative! Disco bus anyone?</h4>
+            </h4>
+            <div class="col-md-3" style="padding-right:10px;"> <img src="images/choice1.jpg" class="thumbnail">
+              <h4 class="text-center" style="padding-right:10px;color:#233a7c;">FAMILY & FRIENDS</h4>
+            </div>
+            <div class="col-md-3" style="padding-right:10px;"><img src="images/choice2.jpg" class="thumbnail" >
+              <h4 class="text-center" style="color:#233a7c;">VIP & EXECUTIVE </h4>
+            </div>
+            <div class="col-md-3" style="padding-right:10px;"> <img src="images/choice3.jpg" class="thumbnail">
+              <h4 class="text-center" style="color:#233a7c;">BIG DAYS OUT</h4>
+            </div>
+            <div class="col-md-3" style="padding-right:10px;"> <img src="images/choice4.jpg" class="thumbnail">
+              <h4 class="text-center" style="color:#233a7c;">SCHOOLS & SPORT</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--add this -->
+  <section class="sales">
+    <div class="container">
+      <div class="title-wrap" style="background:none;">
+        <div class="container">
+          <div class="travel-title text-center">
+            <h2 style="color:#233a7c; font-weight:300;" class="text-center">Live Journeys</h2>
+          </div>
+          <!--          <a href="#" title="" class="awe-btn awe-btn-5 awe-btn-lager arrow-right text-uppercase float-right">VIEW ALL</a>-->
+        </div>
+      </div>
+      <div class="cruise-list-cn tour-list-cn">
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/img-6.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Dublin to Galway 10 people</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice1.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Cork to Limerick picnic party</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice2.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Waterford to Belfast 10 people</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice3.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Sligo to Tralee new year party</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice4.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Dublin to galway 10 people</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice1.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Dublin to Galway 10 people</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice2.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Cork to Limerick picnic party</a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+        <div class="cruise-item hvr-fade">
+          <figure class="cruise-img"><a href="tour-detail.html"><img src="images/choice3.jpg" alt="" class="thumbnail"></a></figure>
+          <div class="cruise-text">
+            <div class="cruise-name"><a href="#" style="color:#233a7c;">Waterford to Belfast 10 people </a></div>
+            <p style="padding-top:10px;color:#747474;">I am looking for a family picnic party A big part of the Party Family Picnic is going to be our food drive! We want to collect a ton of food to help our neighbors in need.</p>
+            <small style="color:#747474;"> <i class="fa fa-calendar" style="color:#747474;"></i> 10-02-2016</small> <small style="color:#747474;" class="pull-right"> <i class="fa fa-calendar" style="color:#747474;"></i> Closes 10-02-2016</small>
+            <div class="price-box"><span class="price"> <ins>€429</ins></span> <span class="price night"><a class="btn btn-primary" href="#" role="button">Place Bid</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row destacados">
+      <h2 class="text-center"><img src="images/why-journeybid.png"></h2>
+      <br>
+      <br>
+      <div class="col-md-3">
+        <div> <i class="flaticon-check23"></i>
+          <h2 style="color:#233a7c; font-weight:300;">Reliable</h2>
+          <p style="color:#747474;"> JourneyBid's marketplace makes the best deal for both travelling companies groups, families or friends. We bridge the gap between customer and provider, with more company profiles and options than any other source.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div> <i class="flaticon-firewall12"></i>
+          <h2 style="color:#233a7c; font-weight:300;">Best Value</h2>
+          <p class="space" style="color:#747474;"> JourneyBid takes away all the hassle of calling and contacting companies, with hundreds of nationwide providers getting the chance to bid for your trip, all from just one post. With more choice and competition than you've ever seen before as the marketplace brings deals to you. </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div> <i class="flaticon-thumbs28"></i>
+          <h2 style="color:#233a7c; font-weight:300;">Verified</h2>
+          <p class="space" style="color:#747474;"> Every travel firm using JourneyBid is fully licensed and verified with the legal and traffic regulations, as you would expect. We go the extra mile to be the go-to site for hiring coach firms right across the country. We get feedback on each and every journey too, ensuring our service is second to none. </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div> <i class="flaticon-spaceship6"></i>
+          <h2 style="color:#233a7c; font-weight:300;">Fast</h2>
+          <p class="space" style="color:#747474;"> JourneyBid helps organisers find their best transport deals. Maximum value and reassurance. Journey planners' trips need only be posted once, yet it then goes out to all firms on the platforms to see. They get their best deal by setting their deadline or just checking back later, with no further fuss. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- add this-->
+  <section class="confidence-subscribe">
+    <div class="bg-parallax bg-3" style="background-position: 50% 15px;"></div>
+    <div class="container">
+      <div class="row cs-sb-cn">
+        <div class="col-md-6">
+          <div class="confidence">
+            <h3 class="text-center"><img src="images/book-confidence.png">
+              <!--Book with Confidence-->
+            </h3>
+            <ul>
+              <li><span class="label-nb"><!--<img src="images/bullets.png">--></span>
+                <h5>Flying in for a Festival? </h5>
+                <p>Book the best deal to and from your event or private party. You can be creative too, we'll do our best to satisfy! Disco bus anyone?</p>
+              </li>
+              <li><span class="label-nb"><!--<img src="images/bullets.png">--></span>
+                <h5>Corporate Travel</h5>
+                <p>We will get your best Christmas or other occasion travel sorted, as well as executive travel too. Best rates and luxury service around. </p>
+              </li>
+              <li><span class="label-nb"><!--<img src="images/bullets.png">--></span>
+                <h5>Schools, Sports and Clubs </h5>
+                <p>From a full scale family gathering, school or sports club trip, we will help you plan the best event and keep you costs right down. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe">
+            <h2 style="color:#233a7c; font-weight:300; text-align:center;">Drop us a line.<br> We'd love to hear from you.</h2>
+            <div class="contact-cn1">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <textarea class="field-input" rows="4" cols="54" id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="follow-us">
+              <h2 style="color:#233a7c; text-align:center;">Follow us</h2>
+              <div class="follow-group"><a href="#" title=""><i class="fa fa-facebook"></i></a> <a href="#" title=""><i class="fa fa-twitter"></i></a> <a href="#" title=""><i class="fa fa-pinterest"></i></a> <a href="#" title=""><i class="fa fa-linkedin"></i></a> <a href="#" title=""><i class="fa fa-instagram"></i></a> <a href="#" title=""><i class="fa fa-google-plus"></i></a> <a href="#" title=""><i class="fa fa-digg"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- add this-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo-foter"><a href="index-2.html" title=""><img src="images/logo-footer.png" alt=""></a></div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="ul-ft">
+            <ul>
+              <li><a href="about.html" title="">About</a></li>
+              <li><a href="blog.html" title="">Blog</a></li>
+              <li><a href="faq.html" title="">FAQ</a></li>
+              <li><a href="how-it-works.html" title="">How it Works</a></li>
+              <li><a href="careers.html" title="">Providers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="ul-ft">
+            <ul>
+              <li><a href="contact.html" title="">Contact Us</a></li>
+              <li><a href="#" title="">Privacy Policy</a></li>
+              <li><a href="#" title="">Term of Service</a></li>
+              <li><a href="#" title="">Live Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <p class="copyright">© 2016 JourneyBid™ All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="js/library/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/library/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/library/parallax.min.js"></script>
+<script type="text/javascript" src="js/library/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/library/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/library/jquery.mb.YTPlayer.min.js"></script>
+<script type="text/javascript" src="js/library/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

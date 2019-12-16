@@ -1,0 +1,60 @@
+
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:13:01 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'Oophs. Error!' in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:13:15 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'Oophs. Error!' in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:17:29 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'Oophs. Error!' in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:17:30 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'Oophs. Error!' in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:17:34 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'Oophs. Error!' in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/journeybid/public_html/hybridauth/index.php(18): Hybrid_Endpoint::process()
+#4 {main}
+  thrown in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 211
+[18-Oct-2016 03:19:47 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:28:21 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:29:28 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:32:57 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:33:06 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:35:13 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:35:19 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:35:28 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[18-Oct-2016 03:56:28 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[19-Oct-2016 03:01:09 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[19-Oct-2016 03:02:16 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[19-Oct-2016 03:08:53 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
+[20-Oct-2016 10:00:56 UTC] PHP Fatal error:  Class 'Hybrid_Exception' not found in /home/journeybid/public_html/hybridauth/Hybrid/Endpoint.php on line 205
